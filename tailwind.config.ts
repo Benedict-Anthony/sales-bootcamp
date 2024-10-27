@@ -7,13 +7,23 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "1160px",
+      xl: "1200px",
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightGray: "#C4C4C4",
+        dark: "#121212",
+        blue: "#100E86",
+        red: "#FF0000",
+        lightRed: "#FFE8E8",
+        lightYellow: "#FBBC04",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
