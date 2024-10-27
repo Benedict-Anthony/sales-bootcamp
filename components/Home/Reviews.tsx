@@ -21,10 +21,10 @@ const Reviews = () => {
         </div>
 
         <div className="w-3/4 space-y-5">
-          <ReviewsPercentage percent="75%" number="35" />
-          <ReviewsPercentage percent="70%" number="30" />
-          <ReviewsPercentage percent="75%" number="3" />
-          <ReviewsPercentage percent="70%" number="7" />
+          <ReviewsPercentage percent={"w-[85%]"} number="35" />
+          <ReviewsPercentage percent={"w-[65%]"} number="30" />
+          <ReviewsPercentage percent={"w-[30%]"} number="3" />
+          <ReviewsPercentage percent={"w-[45%]"} number="7" />
         </div>
       </div>
       <div className="mt-5">
@@ -85,7 +85,7 @@ const ReviewsPercentage = ({
 }) => (
   <div className="flex justify-center items-center gap-2">
     <div className="w-full h-1 bg-lightGray rounded-md flex justify-between items-center">
-      <div className={`w-[${percent}] bg-lightYellow h-full rounded-md`}></div>
+      <div className={`${percent} bg-lightYellow h-full rounded-md`}></div>
     </div>
     <p className=""> {number}</p>
   </div>
