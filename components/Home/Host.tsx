@@ -40,10 +40,10 @@ const SingleHost = ({ host }: { host: (typeof hosts)[0] }) => {
         className="w-full"
       />
       <div className="">
-        <p className="text-center md:text-center text-dark text-sm">
+        <p className="text-center md:text-left text-dark text-sm">
           {host.username}
         </p>
-        <h3 className="text-bold font-bold text-center md:text-center">
+        <h3 className="text-bold font-bold md:text-left text-center">
           {host.name}
         </h3>
         <p className="text-dark text-base text-center md:text-left md:text-xl font-normal">
