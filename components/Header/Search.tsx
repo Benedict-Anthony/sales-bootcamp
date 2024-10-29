@@ -4,7 +4,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 const Search = () => {
   return (
-    <form className="relative w-1/3">
+    <form className="relative w-1/3 hidden md:block">
       <input
         type="text"
         className="border py-2 px-2 rounded-3xl w-full pl-7"

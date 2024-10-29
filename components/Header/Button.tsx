@@ -6,7 +6,7 @@ const ButtonGroups = () => {
     <div className="flex justify-between items-center gap-3">
       <Button
         text="Get Started"
-        className="bg-none text-blue text-sm btn-link no-underline font-bold"
+        className="bg-none text-blue text-sm btn-link no-underline font-bold hidden md:flex"
       />
       <Button
         text="Login"

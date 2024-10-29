@@ -7,7 +7,7 @@ const Accordion = () => {
   return (
     <Container>
       <Title title="Frequently Asked Questions" />
-      <div className="w-full space-y-2">
+      <div className="w-full md:w-[800px]  mx-auto space-y-2">
         <div className="collapse collapse-arrow join-item border-base-300 border rounded-md">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-xl font-medium">

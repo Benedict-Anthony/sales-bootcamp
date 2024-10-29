@@ -13,18 +13,18 @@ const Landing = () => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-start gap-10  py-10">
           <div className="">
-            <h2 className="font-bold text-dark text-5xl leading-[76px]">
+            <h2 className="font-bold text-dark text-3xl text-center md:text-left md:text-5xl md:leading-[76px]">
               Foundation of Android <br />
               Development
             </h2>
 
-            <div className="text-2xl mt-4 font-normal leading-[42px]">
+            <div className="text-base md:text-2xl mt-4 font-normal text-center md:text-left md:leading-[42px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper
               quam pulvinar interdum porttitor elit quis elementum duis
               curabitur.
             </div>
 
-            <div className="grid grid-cols-3 justify-between items-center mt-10">
+            <div className="flex flex-wrap justify-center items-center mt-10 gap-4">
               <p className="flex justify-start items-center gap-1">
                 <Image
                   src={bootcamp}
@@ -43,10 +43,14 @@ const Landing = () => {
                 3rd December
               </p>
             </div>
+            {/* <div className="flex justify-center items-center">
+  
+</div> */}
+            <h3 className="font-bold text-center md:text-left text-dark text-4xl mt-10">
+              N30,000
+            </h3>
 
-            <h3 className="font-bold text-dark text-4xl mt-10">N30,000</h3>
-
-            <div className="flex justify-start items-center gap-5 mt-5">
+            <div className="flex justify-center md:justify-start items-center gap-5 mt-5">
               <Button
                 text="Enrol Now"
                 className="text-white text-sm font-bold bg-blue rounded-3xl px-10 py-4"
@@ -62,20 +66,24 @@ const Landing = () => {
               height={400}
               priority
               alt="hero"
-              className="w-[555px] h-[506px]"
+              className="w-[80%] h-full mx-auto md:w-[555px] md:h-[506px] "
             />
           </div>
         </div>
       </Container>
-      <div className="flex justify-between items-center px-12 py-4 bg-lightRed rounded-md">
-        <p className=" text-red text-2xl">Registration Deadline:</p>
-        <Duration lightText="Days" boldText="03" />
-        <Duration lightText="hours" boldText="15" />
-        <Duration lightText="mins" boldText="24" />
-        <Duration lightText="sec" boldText="33" />
+      <div className="flex flex-col md:flex-row justify-between items-center px-12 py-4 bg-lightRed rounded-md">
+        <p className=" text-red text-2xl text-center md:text-left">
+          Registration Deadline:
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-14 gap-y-6">
+          <Duration lightText="Days" boldText="03" />
+          <Duration lightText="hours" boldText="15" />
+          <Duration lightText="mins" boldText="24" />
+          <Duration lightText="sec" boldText="33" />
+        </div>
         <Button
           text="Enrol Now"
-          className="bg-white text-sm font-bold rounded-3xl px-10 py-4"
+          className="bg-white text-sm font-bold rounded-3xl px-10 py-4 mt-5 md:mt-0"
         />
       </div>
     </Fragment>

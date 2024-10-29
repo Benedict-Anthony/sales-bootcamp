@@ -12,7 +12,7 @@ const Reviews = () => {
   return (
     <Container>
       <Title title="Host Reviews" />
-      <div className="mt-5 py-4 px-2 shadow-lg rounded-md flex justify-start items-center drop-shadow my-3">
+      <div className="w-full md:w-[900px] mx-auto mt-5 py-4 px-2 shadow-lg rounded-md flex justify-start items-center drop-shadow my-3">
         <div className="flex justify-center items-center flex-col w-1/4">
           <h1 className="font-bold text-xl flex gap-3 justify-center items-center">
             4. 5 <IoStar className="text-lightYellow" size={20} />
@@ -27,7 +27,7 @@ const Reviews = () => {
           <ReviewsPercentage percent={"w-[45%]"} number="7" />
         </div>
       </div>
-      <div className="mt-5">
+      <div className="mt-5 w-full md:w-[900px] mx-auto ">
         {[1, 2, 3].map((num) => (
           <div className="" key={num}>
             <div className="flex justify-start items-center gap-4">
